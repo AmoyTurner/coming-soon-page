@@ -1,0 +1,144 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background styling with overlay */
+body {
+    background: linear-gradient(to bottom right, rgba(0, 113, 188, 0.8), rgba(17, 46, 81, 0.8)), url('background.jpg') center/cover;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+/* Header styling to align top left */
+.usa-header {
+    width: 100%;
+    background-color: #112e51;
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.usa-logo {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* Hero section styling */
+.hero-section {
+    text-align: center;
+    padding: 6.25rem 1.25rem;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 5rem;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Countdown styling */
+.countdown {
+    color: #ff8c00;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#timer {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Heading styling */
+.usa-heading {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+/* Intro and additional text styling */
+.usa-intro {
+    font-size: 1.2rem;
+    margin-bottom: 0.9375rem;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.usa-section p {
+    font-size: 1rem;
+    margin-bottom: 1.875rem;
+    color: #ffffff;
+}
+
+/* Form and input styling */
+.usa-form-group {
+    margin-bottom: 1.25rem;
+}
+
+.usa-label {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.usa-input {
+    padding: 0.625rem;
+    font-size: 1rem;
+    border: 0.0625rem solid #ffffff;
+    color: #000000;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Button customization */
+.usa-button {
+    background-color: #ff8c00;
+    color: #ffffff;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.usa-button:hover {
+    transform: scale(1.05);
+    background-color: #e67600;
+}
+
+/* Footer styling */
+.usa-footer {
+    background-color: #112e51;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-text {
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.875rem;
+    padding-top: 0.5rem;
+}

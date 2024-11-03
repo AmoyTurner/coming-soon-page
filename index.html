@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon - US Web Design System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uswds@3.2.1/dist/css/uswds.min.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <!-- Header with USWDS styling -->
+    <header class="usa-header usa-header--basic">
+        <div class="usa-nav-container">
+            <div class="usa-navbar">
+                <h1 class="usa-logo">US Web Design System</h1>
+            </div>
+        </div>
+    </header>    
+
+    <!-- Hero Section -->
+    <section class="usa-section hero-section" role="main">
+        <div class="usa-grid-container">
+            <div class="usa-prose">
+                <h2 class="usa-heading">Coming Soon</h2>
+                <p class="usa-intro">A brand-new experience is on the way! We're building something great, and we can't wait to show you.</p>
+
+                <!-- Countdown Timer -->
+                <div class="countdown">
+                    <h3>Launching In:</h3>
+                    <div id="timer">
+                        <span id="days">00</span> Days 
+                        <span id="hours">00</span> Hours 
+                        <span id="minutes">00</span> Minutes 
+                        <span id="seconds">00</span> Seconds
+                    </div>
+                </div>
+
+                <p>Sign up to be among the first to know when we go live.</p>
+            </div>
+            
+            <!-- Sign-up Form with Icon and Accessibility Labels -->
+            <form class="usa-form" aria-label="Sign up for notifications">
+                <div class="usa-form-group">
+                    <label class="usa-label" for="email">📧 Email address</label>
+                    <input class="usa-input" id="email" name="email" type="email" placeholder="Enter your email" required aria-required="true">
+                </div>
+                <button type="submit" class="usa-button" aria-label="Sign up for notifications">Notify Me</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer with Accessible Links -->
+    <footer class="usa-footer">
+        <div class="usa-footer__primary-section">
+            <div class="usa-footer__container usa-footer__medium">
+                <nav class="usa-footer__nav" aria-label="Footer navigation">
+                    <ul class="usa-footer__primary-content">
+                        <li class="usa-footer__primary-item">
+                            <a class="usa-footer__primary-link" href="#" aria-label="Privacy Policy">🔒 Privacy Policy</a>
+                        </li>
+                        <li class="usa-footer__primary-item">
+                            <a class="usa-footer__primary-link" href="#" aria-label="Contact Us">📞 Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-text">© 2024 US Web Design System. All Rights Reserved.</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/uswds@3.2.1/dist/js/uswds.min.js"></script>
+    <script src="js/script.js"></script> <!-- Link to external JavaScript file for countdown -->
+</body>
+</html>
